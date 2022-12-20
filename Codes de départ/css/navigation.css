@@ -1,0 +1,169 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+.menus {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    background-image: linear-gradient(purple, rgb(206, 0, 0));
+
+    color: white;
+    height: 50px;
+    width: calc(min(100%, 1400px));
+    border-radius: 60px;
+}
+.Body{
+    background-color: gray
+}
+.icon {
+    font-size:28px;
+    cursor: pointer;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white;
+}
+
+.menuText {
+    font-size: 1em;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 35px auto;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu:hover,
+.menu:hover .icon {
+    color: rgb(255, 30, 30);
+    -webkit-text-fill-color: rgb(255, 30, 30);
+}
+
+.menu:active,
+.menu:active .icon {
+    color:  rgb(255, 30, 30);
+    -webkit-text-fill-color: rgb(255, 30, 30);
+}
+
+.selected,
+.selected .icon {
+    color: green;
+    -webkit-text-fill-color: rgb(0, 255, 68);
+}
+
+.menuBuffer {
+    height: 50px;
+}
+
+@media screen and (min-width:800px) {
+    .menuText {
+        display: block;
+    }
+}
+.main{
+    margin: auto;
+    max-width: 1400px;
+    
+}
+.boxContainer {
+    display:flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    margin: 20px;
+    text-align: center;
+
+    
+}
+.box{
+    flex: 1; 
+    display: inline;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+
+
+}
+.box img{
+    width: 100%;
+}
+.largeBox{
+    flex: 2;
+    background-image: linear-gradient(purple, rgb(206, 0, 0));
+
+}
+.solitaryBox{
+    flex: 100%;
+    background-color: white;
+
+ 
+    
+}
+.header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    position:fixed;
+    top: 0px;
+    width: calc(min(100% , 1400px));
+    
+    
+}
+.headerBuffer{
+    height: 60px;
+}
+.header2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    position: fixed;
+    bottom: 0px;
+    width: calc(min(100% , 1400px));
+    
+    
+}
+.titre {
+    font-size: 3em;
+    text-align: center;
+}
+.secondaire{
+    color: gray;
+    font-size: 1em;
+}
+.o1{
+    order: 1;
+    background-image: linear-gradient(purple, rgb(206, 0, 0));
+
+    border: 1px solid black;
+
+}
+.o2{
+    order: 2;
+    border: 1px solid black;
+}
+.o3{
+    background-image: linear-gradient(purple, rgb(206, 0, 0));
+
+
+    order: 3;
+    border: 1px solid black;
+
+}
+.icon2{
+    width: 800px;
+    justify-content: center;
+    background: no-repeat;
+}
